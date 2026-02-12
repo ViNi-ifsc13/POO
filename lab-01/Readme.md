@@ -19,14 +19,28 @@ Um Personal Access Token (PAT) é basicamente um código que funciona como uma s
 
 Para fazer o seu PAT é preciso realizar os seguintes passos:
 
-1. Clique no seu perfil no canto superior direito.
-1. Vá até configurações.
-1. Desça até o final no lado esquerdo da tela e clique em configurações do desenvolvedor.
-1. Agora entre em Personal access tokens e clique em Tokens clássicos.
-1. Clique em gerar novo token, escolha o token clássico.
+1. Clique no seu *perfil* no canto superior direito.
+1. Vá até *configurações*.
+1. Desça até o final no lado esquerdo da tela e clique em *configurações do desenvolvedor*.
+1. Agora entre em *Personal access tokens* e clique em *Tokens clássicos.*
+1. Clique em *gerar novo token*, escolha o *token clássico.*
 1. Agora basta escolher um nome, a data de duração, e as permissões concedidas por esse token.
-1. Por fim clique em gerar novo token lá no final.
+1. Por fim clique em *gerar novo token* lá no final.
 
 ### Salvar em cache as credenciais do PAT
+
+Utilizar o PAT toda vez que precisar realizar um "git push" é muito importante para a segurança, contudo em uma seção de uso pode ser cansativo colar o token todas as vezes. Desta forma é possível usar um comando que salva suas credenciais por um determinado período de tempo, com a finalidade de facilitar o trabalho.
+
+O comando é o seguinte:
+
+```bash
+git config --global credential.helper 'cache --timeout=3600'
+
+# 3600 significam 3600 segundos, o equivalente a uma hora.
+
+# Caso não use o comando --timeout , o padrão será de 900 segundos, equivalente a 15 minutos.
+```
+
+
 
 ## Qual a diferença entre git merge e git rebase?

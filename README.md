@@ -1,6 +1,8 @@
+![GitHub License](https://img.shields.io/github/license/ViNi-ifsc13/POO)
+
 # Atividades práticas da disciplina de Programação Orientada a Objetos
 
-![Static Badge](https://img.shields.io/badge/MIT-License?style=for-the-badge)
+
 
 
 # Laboratórios

@@ -44,3 +44,9 @@ git config --global credential.helper 'cache --timeout=3600'
 
 
 ## Qual a diferença entre git merge e git rebase?
+
+Ambos os comandos estão relacionados a função de juntar arquivos com conteúdos que divergem. 
+
+O git merge é uma opção considerada mais segura, logo que ela preserva o histórico e adiciona um novo commit de junção.
+
+Já o git rebase não gera um commit ao fazer a junção, desta forma ele cria uma única linha do tempo, o que pode ser mais e arriscado.

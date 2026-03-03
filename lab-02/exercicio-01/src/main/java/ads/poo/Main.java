@@ -19,6 +19,8 @@ public class Main {
             estaçao = Primavera;
         else if (dia > 20 && mes.equals("dezembro") || mes.equals("janeiro") || mes.equals("fevereiro") || dia < 21 && mes.equals("março"))
             estaçao = Verão;
+        else
+            System.out.println("Erro");
         }
 
         IO.println("A estação é:" + estaçao);

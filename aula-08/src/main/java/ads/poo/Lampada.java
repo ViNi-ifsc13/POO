@@ -8,6 +8,7 @@ public class Lampada {
     boolean isLigada(){
         return ligada;
         }
+
     boolean ligarDesligar(){
         ligada = !ligada;
         return ligada;

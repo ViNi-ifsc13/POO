@@ -4,13 +4,13 @@ public class Conta {
 
     // Atributos
 
-    private double saldo;
+    private int saldo;
     private String nome;
     private String numConta;
 
     // Métodos Construtor
 
-    public Conta(double saldo, String nome, String numConta) {
+    public Conta(int saldo, String nome, String numConta) {
 
         this.saldo = (saldo > 0) ? saldo : 0;
         this.nome = nome;
@@ -28,11 +28,20 @@ public class Conta {
     }
     // Métodos
 
-    public void depositar(double valor){
+    public double depositar(double valor){
         this.saldo += (valor > 0) ? valor : 0;
     }
 
     public void sacar(double valor){
         this.saldo -= (valor > saldo) ? 0 : (valor>0) ? valor : 0;
     }
+
+    public String getNumConta() {
+        return numConta;
+    }
+
+    public int getSaldo() {
+        return saldo;
+    }
+
 }

@@ -57,6 +57,18 @@ public class Main {
         ArrayList<Conta> contas = new ArrayList<>();
 
 
+
+
+
+
+
+
+// HashMap
+// Hash table
+// Tabela de dispersão
+//
+
+
     }
 }
 

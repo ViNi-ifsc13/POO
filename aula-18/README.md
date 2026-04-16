@@ -22,7 +22,7 @@ classDiagram
     
     class Carro{
         -marca: String
-        +propulsor: Motor
+        -propulsor: Motor
         +Carro(ma: String, mo: Motor)
         +acelerar(v: int) void
         +trocaMotor(m: Motor) void

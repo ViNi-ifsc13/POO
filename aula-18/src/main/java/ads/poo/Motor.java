@@ -12,6 +12,12 @@ public class Motor {
     // Métodos Construtor
 
     public Motor(int hp, int giroAtual, int cilindros) {
+        this.hp = hp;
+        this.giroAtual = giroAtual;
+        this.cilindros = cilindros;
+    }
+
+    public Motor() {
         this.hp = 144;
         this.giroAtual = 2;
         this.cilindros = 10;

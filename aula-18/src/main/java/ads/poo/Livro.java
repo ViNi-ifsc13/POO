@@ -12,7 +12,7 @@ public class Livro {
 
     // Métodos Construtor
 
-    public Livro(String titulo, Pessoa autor, ArrayList<Capitulo> capitulos) {
+    public Livro(String titulo, Pessoa autor) {
         this.titulo = titulo;
         this.autor = autor;
         this.capitulos = new ArrayList<>();

@@ -102,19 +102,72 @@ classDiagram
     direction LR
     
     class Empresa{
+        -nome: String
+        -veiculos: ArrayList~Veiculo~        
+        +Empresa(nome: String)
+        
         
     }
     
     class Veiculo{
+        -modelo: String
+        -placa: String
+        -anoFabrica: LocalDate
+        -dataUso: LocalDate
+        -distanciaPercorrida: double
+        -motoristas: ArrayList~Motorista~
+        +Veiculo(modelo: String, placa: String, anoFabrica: LocalDate)
+        +UsoVeiculo(dataUso: LocalDate, motorista: ArrayList~Motorista~, distanciaPercorrida: double)
         
     }
     
     class Motorista{
+        -nome: String
+        -cpf: String
+        +Motorista()
         
     }
     
+    Empresa"1" *-- "0..*"Motorista
+    Veiculo"0..*" --o "1"Empresa
+    Motorista"1" o-- "1..*"Veiculo
 
 
 
+```
+
+## 1.4 - Sistema de reserva de passagens aéreas
+
+```mermaid
+
+classDiagram
+
+    direction LR
+    
+    class Companhia{
+        -nome: String
+        -voos: ArrayList~Voo~
+        -passageiros: ArrayList~Passageiro~
+        +addReserva(passageiros:ArrayList~Passageiro~, voos: ArrayList~Voo~ )
+    }
+    
+    class Voo{
+        -numero: Double
+        -destino: String
+        -data: LocalDate
+        -horaPartida: LocalDate
+        -maxPassageiros: int
+        +Voo(numero: Double, destino: String, data: LocalDate, horaPartida: LocalDate, maxPassageiros: int)
+    }
+    
+    class Passageiro{
+        -nome: String
+        -emai: String
+        -telefone: String
+        +Passageiro()
+    }
+    
+    Companhia"1" *-- "0..*"Voo
+    Passageiro"1" --o "1"Voo
 
 ```

@@ -32,33 +32,36 @@ public class App {
 
         draw.setXscale(0,800);
 
-        draw.setPenColor(Color.GREEN);
+        draw.setPenColor(Color.RED);
 
-        for (int i = 0; i < 800; i+=5) {
-            draw.line(i,0,i,800);
-            draw.line(0,i,800,i);
-        }
+//        for (int i = 0; i < 800; i+=5) {
+//            draw.line(i,0,i,800);
+//            draw.line(0,i,800,i);
+//        }
 
 
         draw.show();
 
         draw.setFontSize(30);
 
-//        for (int i = 0; i < 10; i++) {
-//            draw.clear();
-//            draw.text(400,400,"" + i);
-//            draw.show();
-//            TimeUnit.SECONDS.sleep(1);
-//
-//        }
+        for (int i = 0; i < 10; i++) {
+            draw.clear();
+            draw.text(400,400,"" + i);
+            draw.show();
+            TimeUnit.SECONDS.sleep(1);
 
-        // TODO contador até 10, aparecer coração (desafio dia dos namorados)
+        }
 
-        draw.filledCircle(300,500,100);
-        draw.filledCircle(450,500,100);
-        double[] x1 = {300,350,350,450};
-        double[] y1 = {500,150,150,500};
+
+        draw.filledCircle(280,550,197);
+        draw.filledCircle(520,550,197);
+        double[] x1 = {90,400,710};
+        double[] y1 = {500,0,500};
         draw.filledPolygon(x1,y1);
+
+        draw.setFontSize(50);
+        draw.setPenColor(Color.GREEN);
+        draw.text(400,450,"Karina");
         draw.show();
         }
     }

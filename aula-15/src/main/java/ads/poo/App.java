@@ -47,7 +47,6 @@ public class App {
                 }
                 return;
             }
-
         }
         IO.println("Número de conta não encontrada.");
     }
@@ -58,27 +57,32 @@ public class App {
 
         for (Conta numConta : contas) {
             if (numConta.getNumConta().equals(numeroConta)) {
+                var saldoAnterior = numConta.getSaldo();
                 numConta.sacar(valorSaque);
+                if(saldoAnterior == numConta.getSaldo()) {
+                    IO.println("Não foi possível sacar");
+                }
                 return;
             }
-
-
         }
         IO.println("Número de conta não encontrada.");
     }
 
 
-    void menu(int opcao) {
+    void menu() {
+
+        int opcao = 0;
 
         while (opcao != 5) {
 
-            String.format("""
+            String hub = String.format ("""
                     ..:: Menu ::..
                     1 - Cadastrar conta
                     2 - Listar todas as contas
                     3 - Depositar em uma conta
                     4 - Sacar de uma conta
                     5 - Sair""");
+            IO.println(hub);
             opcao = Integer.parseInt(IO.readln("Entre com uma opção: "));
 
             switch (opcao) {
@@ -101,7 +105,9 @@ public class App {
                     sacarConta();
                 }
 
-                case 5 -> {
+                case 5 -> { IO.println("Encerrando programa...");
+                }
+                default -> { IO.println("Opção Inválida!");
                 }
 
             }
@@ -110,16 +116,7 @@ public class App {
 
     static void main(String[] args) {
         App app = new App();
-
-        // ..:: Menu ::..
-        // 1 - Cadastrar conta
-        // 2 - Listar todas as contas
-        // 3 - Depositar em uma conta
-        // 4 - Sacar de uma conta
-        // 5 - Sair
-        int opcao = Integer.parseInt(IO.readln("Entre com uma opção: "));
-        app.menu(opcao);
-
+        app.menu();
 
     }
 }

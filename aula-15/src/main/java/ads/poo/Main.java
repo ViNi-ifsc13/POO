@@ -10,7 +10,7 @@ public class Main {
 
 
 
-////        var outra = "Juca"; // Inferência de tipos (var -> String)
+//       var outra = "Juca"; // Inferência de tipos (var -> String)
 //
 //            ArrayList<String> lista = new ArrayList<>();  // ArrayLista<String> pode ser simplesmente var
 //            Conta c = new Conta(100, "Glauber", "13");
@@ -22,13 +22,13 @@ public class Main {
 //            IO.println(lista.size());
 //            IO.println(lista.toString());
 //
-////            for i não é recomendado para collections
-////        for (int i = 0; i < lista.size(); i++) {
-////            if (lista.get(i).equals("Maria")){
-////                IO.println(lista.get(i));
-////            }
+//        for i não é recomendado para collections
+//        for (int i = 0; i < lista.size(); i++) {
+//            if (lista.get(i).equals("Maria")){
+//                IO.println(lista.get(i));
+//            }
 //
-////        }
+//        }
 //        // For each é melhor para coleções
 //
 //        for(String elemento: lista){

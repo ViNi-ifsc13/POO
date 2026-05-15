@@ -28,7 +28,7 @@ public class Conta {
     }
     // Métodos
 
-    public double depositar(double valor){
+    public void depositar(double valor){
         this.saldo += (valor > 0) ? valor : 0;
     }
 

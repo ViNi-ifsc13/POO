@@ -23,7 +23,7 @@ public class App {
 
         for (Telefone aux : vetor){
             if (aux instanceof Semfio novo){ // Semfio novo = (Semfio) aux;
-                
+
                 IO.println(novo.getFrequencia());
             }
         }

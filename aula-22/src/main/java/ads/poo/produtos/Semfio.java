@@ -32,4 +32,8 @@ public class Semfio extends Telefone {
                 "canais: " + canais + "\n" +
                 "distancia: " + distancia;
     }
+
+    public double getFrequencia() {
+        return frequencia;
+    }
 }

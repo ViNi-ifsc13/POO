@@ -32,4 +32,8 @@ public class Telefone {
                 "peso: " + peso + "\n" +
                 "dimensao: " + dimensao;
     }
+
+    public String getModelo() {
+        return modelo;
+    }
 }

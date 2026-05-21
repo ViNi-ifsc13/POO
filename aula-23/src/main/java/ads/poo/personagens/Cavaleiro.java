@@ -13,12 +13,23 @@ public class Cavaleiro extends Personagem implements Guerreiro{
     //Métodos
 
 
+
+//    public String atacar(){
+//        return "O cavaleiro saca a espada e golpeia" + super.atacar();
+//    }
+//
+//    public String mover(){
+//        return "O cavaleiro começa a andar" + super.mover();
+//    }
+//}
+
     @Override
+
     public String atacar(){
-        return "O cavaleiro saca a espada e golpeia" + super.atacar();
+        return "O cavaleiro saca a espada e golpeia";
     }
 
     public String mover(){
-        return "O cavaleiro começa a andar" + super.mover();
+        return "O cavaleiro começa a andar";
     }
 }

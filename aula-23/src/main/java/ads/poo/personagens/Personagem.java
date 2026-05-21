@@ -18,10 +18,13 @@ public abstract class Personagem {
 
     //Métodos
 
-    public String atacar(){
-        return " com " + ataque + " de força!!";
-    }
-    public String mover(){
-        return " com " + velocidade + " de velocidade";
-    }
+//    public String atacar(){
+//        return " com " + ataque + " de força!!";
+//    }
+//    public String mover(){
+//        return " com " + velocidade + " de velocidade";
+//    }
+
+//    public String atacar(){return "";}
+    public String mover(){return "";}
 }

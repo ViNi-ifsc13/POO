@@ -12,12 +12,20 @@ public class Arqueiro extends Personagem implements Guerreiro{
 
     //Métodos
 
+
+//    public String atacar(){
+//        return "O arqueiro solta uma flechada" + super.atacar();
+//    }
+//
+//    public String mover(){
+//        return "O arqueiro se locomove" + super.mover();
+//    }
+
     @Override
+
     public String atacar(){
-        return "O arqueiro solta uma flechada" + super.atacar();
+        return "O arqueiro solta uma flechada";
     }
 
-    public String mover(){
-        return "O arqueiro se locomove" + super.mover();
-    }
+    public String mover(){return "O arqueiro se locomove";}
 }

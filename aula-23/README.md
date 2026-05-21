@@ -28,9 +28,24 @@ class Aldeao{
         +Cavaleiro()        
     }
     
+    class Coletor{
+        <<interface>>        
+        +coletarMadeira() String
+        +coletarOuro() String
+    }
+    
+    class Guerreiro{
+        <<interface>>
+        +atacar() String
+    }
+    
     Personagem <|-- Aldeao
     Personagem <|-- Arqueiro
     Personagem  <|-- Cavaleiro
+    Aldeao <.. Guerreiro
+    Arqueiro <.. Guerreiro
+    Cavaleiro <.. Guerreiro
+    Coletor ..> Aldeao
     
 
 ```

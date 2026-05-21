@@ -1,6 +1,6 @@
 package ads.poo.personagens;
 
-public class Aldeao extends Personagem implements Guerreiro {
+public class Aldeao extends Personagem implements Guerreiro,Coletor {
 
     // Atributos
 
@@ -12,12 +12,28 @@ public class Aldeao extends Personagem implements Guerreiro {
 
     //Métodos
 
-    @Override
-    public String atacar(){
-        return "O aldeao solta um soco" + super.atacar();
-    }
 
-    public String mover(){
-        return "O aldeao se arrasta" + super.mover();
-    }
+//    public String atacar(){
+//        return "O aldeao solta um soco" + super.atacar();
+//    }
+//
+//    public String mover(){
+//        return "O aldeao se arrasta" + super.mover();
+//    }
+
+    @Override
+
+    public String atacar(){return "O aldeao solta um soco";}
+
+    @Override
+
+    public String coletarMadeira(){return "Aldeao coletando madeira";}
+
+    @Override
+
+    public String coletarOuro(){return "Aldeao coletando ouro";}
+
+    public String mover(){return "O aldeao se arrasta";}
+
+
 }

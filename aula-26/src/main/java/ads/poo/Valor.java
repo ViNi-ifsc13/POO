@@ -16,7 +16,7 @@ public enum Valor {
     REI(13,"k");
 
     private final int valor;
-    private final String inicial;
+    protected final String inicial;
 
     Valor(int valor, String inicial) {
         this.valor = valor;

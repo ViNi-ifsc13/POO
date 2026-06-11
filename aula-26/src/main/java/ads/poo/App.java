@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 import static ads.poo.Naipe.OUROS;
 import static ads.poo.Valor.AS;
+import static ads.poo.Valor.DAMA;
 
 public class App implements DrawListener {
 
@@ -25,12 +26,29 @@ public class App implements DrawListener {
         this.draw.setDefaultCloseOperation(3);
         this.draw.enableDoubleBuffering();
         this.draw.addListener(this);
+
+//        for (InterfaceJogos elemento: this.elementos){
+//            elemento.desenhar(this.draw);
+//        }
+        CartaGrafica cg = new CartaGrafica(OUROS, DAMA,100,100);
+
+        cg.desenhar(this.draw);
+        this.draw.show();
     }
 
     @Override
     public void mouseClicked(double x, double y) {
+
+//        for (InterfaceJogos elemento: this.elementos){
+//            //polimorfismo
+//            if(elemento.clicouDentro(x,y)){
+//                //polimorfismo
+//                elemento.desenhar(this.draw);
+//            }
+//        }
         
         this.draw.picture(x,y, "cartas/1c.png");
+
         this.draw.show();
     }
 
@@ -38,9 +56,6 @@ public class App implements DrawListener {
     static void main(String[] args) {
 
         App app = new App();
-        CartaGrafica cg = new CartaGrafica(OUROS, AS,10,10);
-
-        cg.desenhar(new Draw());
 
     }
 }

@@ -9,7 +9,7 @@ public enum Naipe {
 
     private final int naipe;
     private final String extenso;
-    private final String inicial;
+    protected final String inicial;
 
     Naipe(int naipe, String extenso, String inicial) {
         this.naipe = naipe;

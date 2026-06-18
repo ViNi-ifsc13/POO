@@ -42,10 +42,10 @@ class Aldeao{
     Personagem <|-- Aldeao
     Personagem <|-- Arqueiro
     Personagem  <|-- Cavaleiro
-    Aldeao <.. Guerreiro
-    Arqueiro <.. Guerreiro
-    Cavaleiro <.. Guerreiro
-    Coletor ..> Aldeao
+    Aldeao ..|> Guerreiro
+    Arqueiro ..|> Guerreiro
+    Cavaleiro ..|> Guerreiro
+    Coletor <|.. Aldeao
     
 
 ```
